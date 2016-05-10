@@ -1,6 +1,6 @@
 <h2>Welcome to TO DO LIST </h2>
-<h3>Here is your list</h3>
-
+<h3>Here is your list</h3><p><%= link_to "Create new", new_task_path %>
+<hr>
 <% @tasks.each do |task| %>
   <h4><%= link_to task.name, task_path(task) %></h4>
   <p><%= task.done %></p>
