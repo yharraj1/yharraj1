@@ -17,6 +17,16 @@ class TasksController < ApplicationController
     redirect_to tasks_path(@task)
   end
 
+  def update
+    @task = Task.update(task_params)
+    redirect_to tasks_path(@task)
+  end
+
+  def destroy
+    @task.destroy
+    redirect_to tasks_path(@task)
+  end
+
   private
 
   def task_params
