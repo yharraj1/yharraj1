@@ -1,0 +1,19 @@
+<!-- <form action="/tasks">
+  <p>Name</p>
+  <input type="text" name="tasks[name]">
+  <p>Description</p>
+  <input type="text" name="tasks[description]">
+  <br>
+  <br>
+  <input type="submit">
+</form> -->
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :name, "Mes tâches"%>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit %>
+<% end %>

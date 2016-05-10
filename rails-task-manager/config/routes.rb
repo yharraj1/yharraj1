@@ -3,6 +3,13 @@ Rails.application.routes.draw do
   # Read all tasks
   get "tasks" => "tasks#index"
 
+  #Create a new restaurant
+  get "tasks/new" => "tasks#new"
+
+  get "tasks/:id" => "tasks#show"
+
+  post 'tasks' => 'tasks#create'
+
 
 
 

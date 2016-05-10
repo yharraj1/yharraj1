@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Task.destroy_all
-Laundry = Task.create(name: "Laundry", description: "do laundry tomorrow at 9:00")
+Laundry = Task.create(name: "Laundry", description: "Do laundry tomorrow at 9:00")
 Beer = Task.create(name: "Beer", description: "Buy beers for champions league fin")
 Groceries = Task.create(name: "Groceries", description: "Groceries for friends")
 
